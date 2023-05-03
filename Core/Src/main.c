@@ -97,12 +97,13 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   ssd1306_Init(); /* Initialize OLED display */
-//  ssd1306_Fill(White);
-//  ssd1306_UpdateScreen();
+//ssd1306_Fill(White);
+//ssd1306_UpdateScreen();
   ssd1306_SetCursor(5,5);
   if(isOpen){
 	  ssd1306_WriteString("Open", Font_7x10, White);
-  }else{
+  }
+  else{
 	  ssd1306_WriteString("Closed", Font_7x10, White);
   }
 
