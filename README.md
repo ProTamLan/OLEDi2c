@@ -5,7 +5,7 @@ Tools:
 - STM32F303K8 
 - Breadboard 
 - 4 Jumper Wires 
-- OLED 128X64 I2C Module (Used one sold by IZOKEE)
+- OLED 128X64 I2C Module (By IZOKEE)
 
 The code is based on
 [4ilo/ssd1306-stm32HAL](https://github.com/4ilo/ssd1306-stm32HAL) library
