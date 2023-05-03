@@ -105,6 +105,7 @@ int main(void)
   }else{
 	  ssd1306_WriteString("Closed", Font_7x10, White);
   }
+
 //  returnValue = ssd1306_WriteString(stringArray, Font_7x10, White);
   ssd1306_UpdateScreen();
 
