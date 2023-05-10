@@ -28,7 +28,7 @@ And was made accessible by [afiskon/stm32-ssd1306](https://github.com/afiskon/st
 -  Displaying text, shapes, color, and reactive outputs.
 
 <div align="center">
-				<img src="![breadboardI2Coled](https://github.com/ProTamLan/OLEDi2c/assets/75819639/5162de18-ee4e-4c08-8db1-b4632307364a)" 
+				<img src="https://github.com/ProTamLan/OLEDi2c/assets/75819639/5162de18-ee4e-4c08-8db1-b4632307364a" 
 				     width="450" alt="STM32F303K8pinout" style="border-radius:30px;">
 </div>
 
