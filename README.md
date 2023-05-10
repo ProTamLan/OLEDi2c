@@ -6,7 +6,7 @@
         <h1 style="color:Blue" align="center">OLED I2C</h1>
 </div>
         
-# OLEDi2c
+<h2> OLEDi2c </h2>
 Using the STM32F303K8 and i2c communication protocol to output on an OLED
 
 
