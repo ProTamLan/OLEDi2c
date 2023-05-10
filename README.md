@@ -1,10 +1,11 @@
 <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FProTamLan%2FOLEDi2c"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FProTamLan%2FOLEDi2c&labelColor=%232ccce4&countColor=%23263759" /></a>
-
+<a href="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FProTamLan%2FOLEDi2c&labelColor=%232ccce4&countColor=%23263759" target="_blank"> 
 <div align="center">
 				<img src="https://os.mbed.com/media/uploads/bcostm/nucleo_f303k8_2017_10_10.png" width="450" alt="STM32F303K8pinout" style="border-radius:30px;"></div>
 <div align="center">
         <h1 style="color:Blue" align="center">OLED I2C</h1>
 </div>
+</a>
         
 <h2> OLEDi2c </h2>
 Using the STM32F303K8 and i2c communication protocol to output on an OLED
