@@ -1,6 +1,6 @@
 <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FProTamLan%2FOLEDi2c"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FProTamLan%2FOLEDi2c&labelColor=%232ccce4&countColor=%23263759" /></a>
 
-<img align="center" src="https://os.mbed.com/media/uploads/bcostm/nucleo_f303k8_2017_10_10.png" alt="STM32F303K8pinout" width="500" height="600">  
+<img align="center" src="https://os.mbed.com/media/uploads/bcostm/nucleo_f303k8_2017_10_10.png" alt="STM32F303K8pinout" width="650" height="400">  
 
 # OLEDi2c
 Using the STM32F303K8 and i2c communication protocol to output on an OLED
