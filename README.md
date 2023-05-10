@@ -1,7 +1,7 @@
 <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FProTamLan%2FOLEDi2c"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FProTamLan%2FOLEDi2c&labelColor=%232ccce4&countColor=%23263759" /></a>
 
 <div align="center">
-				<img src="https://os.mbed.com/media/uploads/bcostm/nucleo_f303k8_2017_10_10.png" width="230" alt="STM32F303K8pinout" style="border-radius:30px;"></div>
+				<img src="https://os.mbed.com/media/uploads/bcostm/nucleo_f303k8_2017_10_10.png" width="450" alt="STM32F303K8pinout" style="border-radius:30px;"></div>
 <div align="center">
         <h1 style="color:Blue" align="center">OLED I2C</h1>
 </div>
