@@ -18,11 +18,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "ssd1306.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "ssd1306.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,7 +42,6 @@
 /* Private variables ---------------------------------------------------------*/
 I2C_HandleTypeDef hi2c1;
 
-UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 
@@ -52,7 +50,6 @@ UART_HandleTypeDef huart2;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_USART2_UART_Init(void);
 static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
 
@@ -70,9 +67,10 @@ static void MX_I2C1_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-//	char stringArray[] = "Hello oled";
-//	char returnValue;
-	int isOpen = 0;  // 1 for "Open", 0 for "Closed"
+/*	char stringArray[] = "Hello oled";
+	char returnValue; */
+	int isOpen;
+	//char isPassword[]= "1234A"
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -93,13 +91,22 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART2_UART_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   ssd1306_Init(); /* Initialize OLED display */
-//ssd1306_Fill(White);
-//ssd1306_UpdateScreen();
-  ssd1306_SetCursor(5,5);
+  //Display Loading
+  ssd1306_WriteString("Lock Initializing...", Font_7x10, White);
+  ssd1306_UpdateScreen();
+  HAL_Delay(3000); // Delay for 3 seconds
+
+  /* Clear the display */
+  ssd1306_Fill(Black);
+  ssd1306_SetCursor(0,0);
+  ssd1306_WriteString("Enter Password:", Font_7x10, White);
+  ssd1306_UpdateScreen();
+  ssd1306_SetCursor(30,25);
+  //when it reads an input from keypad HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+  //ssd1306_WriteChar(isPassword, Font_11x18, White);
   if(isOpen){
 	  ssd1306_WriteString("Open", Font_7x10, White);
   }
@@ -215,40 +222,6 @@ static void MX_I2C1_Init(void)
 
 }
 
-/**
-  * @brief USART2 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART2_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART2_Init 0 */
-
-  /* USER CODE END USART2_Init 0 */
-
-  /* USER CODE BEGIN USART2_Init 1 */
-
-  /* USER CODE END USART2_Init 1 */
-  huart2.Instance = USART2;
-  huart2.Init.BaudRate = 38400;
-  huart2.Init.WordLength = UART_WORDLENGTH_8B;
-  huart2.Init.StopBits = UART_STOPBITS_1;
-  huart2.Init.Parity = UART_PARITY_NONE;
-  huart2.Init.Mode = UART_MODE_TX_RX;
-  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
-  huart2.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-  huart2.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-  if (HAL_UART_Init(&huart2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART2_Init 2 */
-
-  /* USER CODE END USART2_Init 2 */
-
-}
 
 /**
   * @brief GPIO Initialization Function
