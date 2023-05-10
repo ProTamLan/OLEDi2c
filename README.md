@@ -9,7 +9,8 @@
         
 <h2> OLEDi2c </h2>
 	Using the STM32F303K8 and i2c communication protocol to output on an OLED
-<br>
+
+
 Tools: 
 - STM32F303K8 
 - Breadboard 
