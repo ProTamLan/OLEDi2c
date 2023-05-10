@@ -1,7 +1,6 @@
 # OLEDi2c
 Using the STM32F303K8 and i2c communication protocol to output on an OLED
-<img align="center" src="![image](https://github.com/ProTamLan/OLEDi2c/assets/75819639/4e2f25b0-ed35-4fac-9176-b1ba6d04f9e6)
-" alt="STM32F303K8pinout">  
+<img align="center" src="https://os.mbed.com/media/uploads/bcostm/nucleo_f303k8_2017_10_10.png" alt="STM32F303K8pinout">  
 
 Tools: 
 - STM32F303K8 
